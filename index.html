@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Principal</title>
+    </head>
+    <link rel="stylesheet" href="style.principal.css">
+    <body>
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="imagenes/index/Logo.png" alt="logo empresa">
+                </a>
+            </div>
+            <nav>
+                <a href="index.html">Home
+                    <img src="fonts_icons/home.png" alt="inicio">
+                </a>
+                <a href="merch.html">Merch
+                    <img src="fonts_icons/merch.png" alt="insumos">
+                </a>
+                <i class="fa-regular fa-address-book"></i>
+                <a href="pedir.html">Pedir
+                    <img src="fonts_icons/pedir.png" alt="pedir">
+                </a>
+            </nav>
+        </header>
+        <br>
+        <div id="carrusel">
+            <img id="fotos" src="imagenes/carrusel/1.png">
+        </div>
+        <br>
+        <form name="cambiar">
+            <button type="button" value="Anterior" onclick="prev();">
+                <img src="fonts_icons/flecha_izquierda.png" alt="atras">
+            </button>
+
+            <button type="button" value="Siguiente" onclick="siguiente();">
+                <img src="fonts_icons/flecha_derecha.png" alt="Siguiente">
+            </button>
+        </form>
+        <script type="text/javascript" src="principal.js"></script>
+
+
+    </body>
+
+</html>

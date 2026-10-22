@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "Poetsen One";
+    src: url("fonts_icons/PoetsenOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Abel";
+    src: url("fonts_icons/Abel-Regular.ttf");
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    background-size: cover;
+}
+
+nav a{
+    padding-right: 10px;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav a:hover{
+    color:#AFCDD8 ;
+}
+
+nav i{
+    color: #F0DEDC;
+}
+
+header{
+    display: flex;
+    min-height: 70px;
+    justify-content:space-between;
+    background-color: #E0A295;
+    align-items: center;
+    padding: 10px;
+}
+
+h1{
+    color:#F0DEDC;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 100px;
+    margin-right: 100px;
+}
+
+#carrusel{
+    width: 45%;
+    height:45%;
+    position: relative;
+    left: 25%; 
+    border-style: none;
+}
+
+#fotos {
+    border-radius: 30px;
+    width:100%;
+    height:100%
+}
+
+button{
+    color: #75625E;
+    background-color: #AFCDD8;
+    border-radius: 10px;
+    border-style: none;
+    position: relative; 
+    left: 45%
+}
+
+@media (max-widht: 700px){
+    header{
+        flex-direction: column;
+    }
+}

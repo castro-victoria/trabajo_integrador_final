@@ -9,24 +9,42 @@
 }
 
 body{
-    font-family: sans-serif;
+    font-family: "Abel", sans-serif;
     margin: 0;
     background-size: cover;
+    background-color: #F5F5DC;
 }
 
-nav a{
-    padding-right: 10px;
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px;
     font-family: "Poetsen One", sans-serif;
     font-weight: 400;
     font-style: normal;
+    text-decoration: none;
+    color: #75625E;
 }
 
-nav a:hover{
-    color:#AFCDD8 ;
+nav a:hover {
+    color: #AFCDD8;
 }
 
 nav i{
     color: #F0DEDC;
+}
+
+nav a.activo {
+    color: #F0DEDC;
+    background-color: #75625E;
+    border-radius: 8px;
 }
 
 header{
@@ -55,18 +73,17 @@ h1{
     margin-right: 100px;
 }
 
-#carrusel{
-    width: 45%;
-    height:45%;
-    position: relative;
-    left: 25%; 
-    border-style: none;
+#carrusel {
+    width: 40%;
+    max-width: 600px;
+    margin: 20px auto;
 }
 
 #fotos {
+    display: block;
+    width: 100%;
+    height: auto;
     border-radius: 30px;
-    width:100%;
-    height:100%
 }
 
 button{
@@ -78,8 +95,143 @@ button{
     left: 45%
 }
 
-@media (max-widht: 700px){
+@media (max-width: 700px){
     header{
         flex-direction: column;
     }
+}
+
+section {
+    background-color: #E0A295;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.presentacion {
+    background-color: #AFCDD8;
+    color: #75625E;
+    font-family: "Abel", sans-serif;
+    text-align: center;
+
+    width: 80%;
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 35px;
+
+    border-radius: 20px;
+    box-sizing: border-box;
+    line-height: 1.7;
+}
+
+.presentacion h2 {
+    font-family: "Poetsen One", sans-serif;
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.presentacion p {
+    font-size: 18px;
+}
+
+.presentacion h3 {
+    font-family: "Poetsen One", sans-serif;
+    color: #75625E;
+}
+
+.sucursales {
+    text-align: center;
+    margin: 60px auto;
+    width: 90%;
+    color: #75625E;
+}
+
+.sucursales h2 {
+    font-family: "Poetsen One", sans-serif;
+    font-size: 32px;
+}
+
+.texto-sucursales {
+    font-family: "Abel", sans-serif;
+    font-size: 20px;
+}
+
+.contenedor-sucursales {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+
+.sucursal {
+    background-color: #F0DEDC;
+    width: 400px;
+    padding: 20px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.sucursal h3 {
+    font-family: "Poetsen One", sans-serif;
+}
+
+.sucursal p {
+    font-family: "Abel", sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.sucursal iframe {
+    border-radius: 12px;
+}
+
+.footer {
+    background-color: #E0A295;
+    color: #75625E;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-logo img {
+    width: 120px;
+    height: auto;
+}
+
+.footer-contacto {
+    font-family: "Abel", sans-serif;
+}
+
+.footer-contacto p {
+    margin: 8px 0;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.redes a {
+    color: #75625E;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.redes a:hover {
+    color: #AFCDD8;
+}
+
+.copyright {
+    font-size: 14px;
 }

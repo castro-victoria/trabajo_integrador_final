@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>Principal</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Che Bakery | Inicio</title>
+        <link rel="stylesheet" href="style.principal.css">
     </head>
-    <link rel="stylesheet" href="style.principal.css">
+
     <body>
         <header>
             <div class="logo">
@@ -12,13 +15,13 @@
                 </a>
             </div>
             <nav>
-                <a href="index.html">Home
+                <a href="index.html" class="activo">Home
                     <img src="fonts_icons/home.png" alt="inicio">
                 </a>
                 <a href="merch.html">Merch
                     <img src="fonts_icons/merch.png" alt="insumos">
                 </a>
-                <i class="fa-regular fa-address-book"></i>
+
                 <a href="pedir.html">Pedir
                     <img src="fonts_icons/pedir.png" alt="pedir">
                 </a>
@@ -26,7 +29,7 @@
         </header>
         <br>
         <div id="carrusel">
-            <img id="fotos" src="imagenes/carrusel/1.png">
+            <img id="fotos" src="imagenes/carrusel/1.png" alt="Cookie de Che Bakery">
         </div>
         <br>
         <form name="cambiar">
@@ -39,8 +42,38 @@
             </button>
         </form>
         <script type="text/javascript" src="principal.js"></script>
-
-
+        <br>
+        <section class="presentacion">
+            <h2>Un poquito sobre Che Bakery</h2>
+            <p>Che Bakery es una marca que combina el amor por lo dulce con un estilo único y creativo. 
+                Nos especializamos en la elaboración de cookies y postres, ofreciendo productos que se destacan por su sabor, 
+                calidad y originalidad.
+                Pero Che Bakery es mucho más que una pastelería. También contamos con una línea de merchandising que incluye 
+                prendas diseñadas para transmitir la esencia y personalidad de nuestra marca.
+                Nuestra propuesta busca crear una experiencia que va más allá de lo gastronómico, conectando con quienes 
+                disfrutan de los pequeños placeres, los sabores irresistibles y un estilo propio.
+            </p>
+            <h3>¡Hechas con amor, para disfrutar!</h3>
+        </section> 
+        <br>
+        
+        <footer class="footer">
+                <div class="footer-logo">
+                    <img src="imagenes/index/Logo.png" alt="Logo de Che Bakery">
+                </div>
+                <div class="footer-contacto">
+                    <p>¡Seguinos y mantenete en contacto!</p>
+                    <div class="redes">
+                        <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+                        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                        <a href="mailto:contacto@chebakery.com.ar">Email</a>
+                    </div>
+                    <p class="copyright">
+                        © 2026 Che Bakery - Todos los derechos reservados
+                    </p>
+                </div>
+        </footer>
     </body>
+    
 
 </html>

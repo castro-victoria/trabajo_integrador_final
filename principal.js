@@ -13,12 +13,12 @@ function siguiente(){
     x++;
     let photo = document.getElementById("fotos");
     if (x < imagenes.length){
-        photo.setAttribute("src",imagenes[x]);
+        photo.setAttribute("src", imagenes[x]);
         console.log("entra if");
     } else {
         console.log("entra else");
         x = 0;
-        photo.setAttribute("src",imagenes[x]);
+        photo.setAttribute("src", imagenes[x]);
     }
 }
 
@@ -26,10 +26,10 @@ function prev(){
     x--;
     let photo = document.getElementById("fotos");
     if (x >= 0){
-        photo.setAttribute("src",imagenes[x]);
+        photo.setAttribute("src", imagenes[x]);
     } else {
-        x = [imagenes.length-1];
-        photo.setAttribute("src",imagenes[x]);
+        x = imagenes.length - 1;
+        photo.setAttribute("src", imagenes[x]);
     }
 }
 window.setInterval(siguiente,4000);

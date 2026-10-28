@@ -1,0 +1,128 @@
+@font-face {
+    font-family: "Poetsen One";
+    src: url("fonts_icons/PoetsenOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Abel";
+    src: url("fonts_icons/Abel-Regular.ttf");
+}
+
+@media (max-width: 700px){
+    header{
+        flex-direction: column;
+    }
+}
+
+body {
+    font-family: "Abel", sans-serif;
+    margin: 0;
+    background-size: cover;
+    background-image: url("fonts_icons/fondo.jpg");
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    color: #75625E;
+}
+
+nav a:hover {
+    color: #AFCDD8;
+}
+
+nav i{
+    color: #F0DEDC;
+}
+
+nav a.activo {
+    color: #F0DEDC;
+    background-color: #75625E;
+    border-radius: 8px;
+}
+
+header{
+    display: flex;
+    min-height: 70px;
+    justify-content:space-between;
+    background-color: #E0A295;
+    align-items: center;
+    padding: 10px;
+}
+
+h1{
+    color:#F0DEDC;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 100px;
+    margin-right: 100px;
+}
+
+.footer {
+    background-color: #E0A295;
+    color: #75625E;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.footer-logo img {
+    width: 100px;
+    height: auto;
+}
+
+.footer-contacto {
+    font-family: "Abel", sans-serif;
+    font-size: 16px;
+}
+
+.footer-contacto p {
+    margin: 8px 0;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.redes a {
+    color: #75625E;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.redes a:hover {
+    color: #AFCDD8;
+}
+
+.copyright {
+    font-size: 13px;
+}

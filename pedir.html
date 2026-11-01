@@ -51,10 +51,10 @@
                     <legend>Elegí tus Sabores</legend>
                     <p>Seleccioná los sabores y las cantidades que quieras pedir.</p>
                     <div>
-                        <div>
+                        <div class="fila-sabor">
                             <div class="campo">
                                 <label>Sabor</label>
-                                <select name="sabor"required>
+                                <select name="sabor" class="select-sabor">
                                     <option>Seleccioná un sabor</option>
                                     <option>Sableé Flan</option>
                                     <option>Cookie Marroc</option>
@@ -72,9 +72,9 @@
                             </div>
                             <div class="campo">
                                 <label>Cantidad</label>
-                                <input type="number" name="cantidad" min="1" max="50" required placeholder="Cantidad">
+                                <input type="number" name="cantidad" class="cantidad-sabor" min="1" max="50" required placeholder="Cantidad">
                             </div>
-                            <button type="button">Eliminar</button>
+                            <button type="button" class="btnEliminarSabor">Eliminar</button>
                         </div>
                     </div>
                     <button type="button">Agregar otro sabor</button>
@@ -101,11 +101,11 @@
                             <option>Retiro en sucursal</option>
                         </select>
                     </div>
-                    <div class="campo">
+                    <div class="campo" hidden>
                         <label for="domicilio">Domicilio de entrega</label>
                         <input type="text" id="domicilio" name="domicilio" maxlength="100" placeholder="Localidad, calle y número">
                     </div>
-                    <div class="campo">
+                    <div class="campo" hidden>
                         <label for="sucursal">Elegí una sucursal</label>
                         <select id="sucursal" name="sucursal" required>
                             <option>Seleccioná una sucursal</option>

@@ -120,6 +120,93 @@ legend {
     border: 2px solid #AFCDD8;
 }
 
+.fila-sabor {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: end;
+    gap: 15px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.fila-sabor .campo {
+    margin-bottom: 0;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 12px ;
+    background-color: #E0A295;
+    color: #75625E;
+    font-family: "Poetsen One", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #AFCDD8;
+    transform: scale(1.04);
+}
+
+#btnAgregarSabor {
+    margin-top: 10px;
+}
+
+.btnEliminarSabor {
+    background-color: #75625E;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.btnEliminarSabor:hover {
+    background-color: #A65D57;
+}
+
+.error-mensaje {
+    display: block;
+    color: #B33A3A;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+#btnEnviar {
+    display: block;
+    margin: 30px;
+    padding: 15px ;
+    font-size: 18px;
+}
+
+
+#respuesta {
+    width: 85%;
+    max-width: 850px;
+    margin: 30px;
+    padding: 25px;
+    background-color: #F0DEDC;
+    border-radius: 15px;
+}
+
+#respuesta:empty {
+    display: none;
+}
+
+#respuesta h2 {
+    font-family: "Poetsen One", sans-serif;
+    text-align: center;
+}
+
+#respuesta ul {
+    line-height: 2;
+}
+
 .footer {
     background-color: #E0A295;
     color: #75625E;

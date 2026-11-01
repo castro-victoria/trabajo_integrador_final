@@ -8,12 +8,6 @@
     src: url("fonts_icons/Abel-Regular.ttf");
 }
 
-@media (max-width: 700px){
-    header{
-        flex-direction: column;
-    }
-}
-
 body {
     font-family: "Abel", sans-serif;
     margin: 0;
@@ -43,10 +37,6 @@ nav a:hover {
     color: #AFCDD8;
 }
 
-nav i{
-    color: #F0DEDC;
-}
-
 nav a.activo {
     color: #F0DEDC;
     background-color: #75625E;
@@ -62,13 +52,6 @@ header{
     padding: 10px;
 }
 
-h1{
-    color:#F0DEDC;
-    font-family: "Poetsen One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
 .logo{
     display: flex;
     align-items: center;
@@ -77,6 +60,25 @@ h1{
 .logo img{
     height: 100px;
     margin-right: 100px;
+}
+
+h1{
+    text-align: center;
+    font-family: "Poetsen One", sans-serif;
+    font-size: 38px;
+    color: #75625E;
+    margin: 40px 0;
+    font-style: normal;
+}
+
+form {
+    width: 85%;
+    max-width: 850px;
+    margin: 50px;
+    padding: 30px;
+    background-color: #F0DEDC;
+    border-radius: 18px;
+    box-shadow: 4px black;
 }
 
 .footer {

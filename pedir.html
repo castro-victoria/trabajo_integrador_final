@@ -25,6 +25,99 @@
                 </a>
             </nav>
         </header>
+        <main>
+            <h1>Realizá tu Pedido</h1>
+            <form id="formPedido">
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                    <div>
+                        <label for="nombre">Nombre (*)</label>
+                        <input type="text" id="nombre" name="nombre" required minlength="2" maxlength="20" placeholder="Ingresá tu Nombre">
+                    </div>
+                    <div>
+                        <label for="apellido">Apellido (*)</label>
+                        <input type="text" id="apellido" name="apellido" required minlength="2" maxlength="20" placeholder="Ingresá tu Apellido">
+                    </div>
+                    <div>
+                        <label for="apellido">Correo Electrónico (*)</label>
+                        <input type="email" id="email" name="email" required maxlength="60" placeholder="ejemplo@mail.com">
+                    </div>
+                    <div>
+                        <label for="telefono">Número de Teléfono (WhatsApp) (*)</label>
+                        <input type="tel" id="telefono" name="telefono" required maxlength="20" placeholder="Ej: 2657-303030">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Elegí tus Sabores</legend>
+                    <p>Seleccioná los sabores y las cantidades que quieras pedir.</p>
+                    <div>
+                        <div>
+                            <div>
+                                <label>Sabor</label>
+                                <select name="sabor"required>
+                                    <option>Seleccioná un sabor</option>
+                                    <option>Sableé Flan</option>
+                                    <option>Cookie Marroc</option>
+                                    <option>Cookie Franui</option>
+                                    <option>Cookie Chocolatosa</option>
+                                    <option>Cookie Chips y Sal</option>
+                                    <option>Cookie de Vainilla y Americana</option>
+                                    <option>Cookie Miel</option>
+                                    <option>Cookie Lemon</option>
+                                    <option>Cookie Crumbl manzana verde</option>
+                                    <option>Cookie Pistacho</option>
+                                    <option>Cookie Oreo</option>
+                                    <option>Cookie Red Velvet</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label>Cantidad</label>
+                                <input type="number" name="cantidad" min="1" max="50" required placeholder="Cantidad">
+                            </div>
+                            <button type="button">Eliminar</button>
+                        </div>
+                    </div>
+                    <button type="button">Agregar otro sabor</button>
+                </fieldset>
+                <fieldset>
+                    <legend>Método de pago</legend>
+                    <div>
+                        <label for="pago">Seleccionaá cómo queres pagar</label>
+                        <select id="" name="pago" required>
+                            <option disabled selected>Elegí método de pago</option>
+                            <option>Efectivo</option>
+                            <option>Transferencia</option>
+                            <option>Tarjetas Bancarias</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Forma de entrega</legend>
+                    <div>
+                        <label for="entrega">¿Cómo queres recibir tu pedido?</label>
+                        <select id="" name="entrega" required>
+                            <option>Elegí tu forma de entrega</option>
+                            <option>Envío a domicilio</option>
+                            <option>Retiro en sucursal</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="domicilio">Domicilio de entrega</label>
+                        <input type="text" id="domicilio" name="domicilio" maxlength="100" placeholder="Localidad, calle y número">
+                    </div>
+                    <div>
+                        <label for="sucursal">Elegí una sucursal</label>
+                        <select id="sucursal" name="sucursal" required>
+                            <option>Seleccioná una sucursal</option>
+                            <option>Villa Mercedes</option>
+                            <option>San Luis Capital</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <button type="submit">Guardar Pedido</button>
+            </form>
+            <section></section>>
+        </main>
         <footer class="footer">
                 <div class="footer-logo">
                     <img src="imagenes/index/Logo.png" alt="Logo de Che Bakery">

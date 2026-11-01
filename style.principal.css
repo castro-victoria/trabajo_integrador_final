@@ -37,10 +37,6 @@ nav a:hover {
     color: #AFCDD8;
 }
 
-nav i{
-    color: #F0DEDC;
-}
-
 nav a.activo {
     color: #F0DEDC;
     background-color: #75625E;
@@ -93,12 +89,6 @@ button{
     border-style: none;
     position: relative; 
     left: 45%
-}
-
-@media (max-width: 700px){
-    header{
-        flex-direction: column;
-    }
 }
 
 section {

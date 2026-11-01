@@ -81,6 +81,45 @@ form {
     box-shadow: 4px black;
 }
 
+fieldset {
+    border: 2px solid #E0A295;
+    border-radius: 12px;
+}
+
+legend {
+    padding: 12px;
+    font-family: "Poetsen One", sans-serif;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.campo label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.campo select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #AFCDD8;
+    border-radius: 8px;
+    background-color: white;
+    color: #75625E;
+    font-family: "Abel", sans-serif;
+    font-size: 17px;
+}
+
+.campo input:focus,
+.campo select:focus {
+    outline: none;
+    border: 2px solid #AFCDD8;
+}
+
 .footer {
     background-color: #E0A295;
     color: #75625E;

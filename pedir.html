@@ -30,19 +30,19 @@
             <form id="formPedido">
                 <fieldset>
                     <legend>Datos Personales</legend>
-                    <div>
+                    <div class="campo">
                         <label for="nombre">Nombre (*)</label>
                         <input type="text" id="nombre" name="nombre" required minlength="2" maxlength="20" placeholder="Ingresá tu Nombre">
                     </div>
-                    <div>
+                    <div class="campo">
                         <label for="apellido">Apellido (*)</label>
                         <input type="text" id="apellido" name="apellido" required minlength="2" maxlength="20" placeholder="Ingresá tu Apellido">
                     </div>
-                    <div>
+                    <div class="campo">
                         <label for="apellido">Correo Electrónico (*)</label>
                         <input type="email" id="email" name="email" required maxlength="60" placeholder="ejemplo@mail.com">
                     </div>
-                    <div>
+                    <div class="campo">
                         <label for="telefono">Número de Teléfono (WhatsApp) (*)</label>
                         <input type="tel" id="telefono" name="telefono" required maxlength="20" placeholder="Ej: 2657-303030">
                     </div>
@@ -52,7 +52,7 @@
                     <p>Seleccioná los sabores y las cantidades que quieras pedir.</p>
                     <div>
                         <div>
-                            <div>
+                            <div class="campo">
                                 <label>Sabor</label>
                                 <select name="sabor"required>
                                     <option>Seleccioná un sabor</option>
@@ -70,7 +70,7 @@
                                     <option>Cookie Red Velvet</option>
                                 </select>
                             </div>
-                            <div>
+                            <div class="campo">
                                 <label>Cantidad</label>
                                 <input type="number" name="cantidad" min="1" max="50" required placeholder="Cantidad">
                             </div>
@@ -81,7 +81,7 @@
                 </fieldset>
                 <fieldset>
                     <legend>Método de pago</legend>
-                    <div>
+                    <div class="campo">
                         <label for="pago">Seleccionaá cómo queres pagar</label>
                         <select id="" name="pago" required>
                             <option disabled selected>Elegí método de pago</option>
@@ -93,7 +93,7 @@
                 </fieldset>
                 <fieldset>
                     <legend>Forma de entrega</legend>
-                    <div>
+                    <div class="campo">
                         <label for="entrega">¿Cómo queres recibir tu pedido?</label>
                         <select id="" name="entrega" required>
                             <option>Elegí tu forma de entrega</option>
@@ -101,11 +101,11 @@
                             <option>Retiro en sucursal</option>
                         </select>
                     </div>
-                    <div>
+                    <div class="campo">
                         <label for="domicilio">Domicilio de entrega</label>
                         <input type="text" id="domicilio" name="domicilio" maxlength="100" placeholder="Localidad, calle y número">
                     </div>
-                    <div>
+                    <div class="campo">
                         <label for="sucursal">Elegí una sucursal</label>
                         <select id="sucursal" name="sucursal" required>
                             <option>Seleccioná una sucursal</option>

@@ -34,22 +34,17 @@
                     <div class="campo">
                         <label for="nombre">Nombre (*)</label>
                         <input type="text" id="nombre" name="nombre" minlength="2" maxlength="20" placeholder="Ingresá tu Nombre">
-                        <span class="error-mensaje" id="error-nombre"></span>
-                    </div>
                     <div class="campo">
                         <label for="apellido">Apellido (*)</label>
                         <input type="text" id="apellido" name="apellido" minlength="2" maxlength="20" placeholder="Ingresá tu Apellido">
-                        <span class="error-mensaje" id="error-apellido"></span>
                     </div>
                     <div class="campo">
                         <label for="apellido">Correo Electrónico (*)</label>
                         <input type="email" id="email" name="email" maxlength="60" placeholder="ejemplo@mail.com">
-                        <span class="error-mensaje" id="error-email"></span>
                     </div>
                     <div class="campo">
                         <label for="telefono">Número de Teléfono (WhatsApp) (*)</label>
                         <input type="tel" id="telefono" name="telefono" maxlength="20" placeholder="Ej: 2657-303030">
-                        <span class="error-mensaje" id="error-telefono"></span>
                     </div>
                 </fieldset>
                 <fieldset>
@@ -65,11 +60,11 @@
                                     <option value="Cookie Marroc">Cookie Marroc</option>
                                     <option value="Cookie Franui">Cookie Franui</option>
                                     <option value="Cookie Chocolatosa">Cookie Chocolatosa</option>
-                                    <option value="Cookie Chips y Sal">Cookie Chips y Sal</option>
+                                    <option value="Cookie Chips">Cookie Chips</option>
                                     <option value="Cookie de Vainilla y Americana">Cookie de Vainilla y Americana</option>
                                     <option value="Cookie Miel">Cookie Miel</option>
                                     <option value="Cookie Lemon">Cookie Lemon</option>
-                                    <option value="Cookie Crumbl manzana verde">Cookie Crumbl manzana verde</option>
+                                    <option value="Cookie Crumbl Manzana">Cookie Crumbl Manzana</option>
                                     <option value="Cookie Pistacho">Cookie Pistacho</option>
                                     <option value="Cookie Oreo">Cookie Oreo</option>
                                     <option value="Cookie Red Velvet">Cookie Red Velvet</option>
@@ -80,11 +75,9 @@
                                 <input type="number" name="cantidad" class="cantidad-sabor" min="1" max="50" placeholder="Cantidad">
                             </div>
                             <button type="button" class="btnEliminarSabor">Eliminar</button>
-                            <span class="error-mensaje error-sabor"></span>
                         </div>
                     </div>
-                    <button type="button" id="btnAgregarSabor">Agregar otro sabor</button>
-                    <span class="error-mensaje" id="error-sabores"></span>
+                    <button type="button" id="btnAgregarSabor">+ Agregar otro sabor</button>
                 </fieldset>
                 <button type="submit" id="btnEnviar">Enviar pedido</button>
             </form>

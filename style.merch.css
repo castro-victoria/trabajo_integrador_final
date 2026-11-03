@@ -34,7 +34,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #AFCDD8;
+    color: black;
 }
 
 nav a.activo {
@@ -52,14 +52,6 @@ header{
     padding: 10px;
 }
 
-h1{
-    color:#F0DEDC;
-    font-family: "Poetsen One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
-}
-
 h2, h3 {
     font-family: "Poetsen One", sans-serif;
     font-size: 30px;
@@ -68,7 +60,6 @@ h2, h3 {
 
 p {
     font-size: 18px;
-    line-height: 1.5;
 }
 
 .logo{
@@ -85,12 +76,12 @@ p {
     text-align: center;
     font-family: "Poetsen One", sans-serif;
     font-size: 38px;
-    margin: 40px 0;
+    margin: 40px;
 }
 
 .catalogo {
     text-align: center;
-    padding: 35px 7%;
+    padding: 35px;
     margin-bottom: 40px;
 }
 
@@ -100,7 +91,7 @@ p {
 }
 
 .contenedor-cookies {
-    background-color: #AFCDD8;
+    background-color: #53634F;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 400px));
     justify-content: center;
@@ -165,7 +156,7 @@ p {
 }
 
 .boton-pedir:hover {
-    background-color: #AFCDD8;
+    background-color: #B8A5C9;
     transform: scale(1.08);
 }
 
@@ -193,7 +184,7 @@ p {
 }
 
 .footer-contacto p {
-    margin: 8px 0;
+    margin: 8px;
 }
 
 .redes {
@@ -210,7 +201,7 @@ p {
 }
 
 .redes a:hover {
-    color: #AFCDD8;
+    color: black;
 }
 
 .copyright {

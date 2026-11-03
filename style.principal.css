@@ -34,7 +34,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #AFCDD8;
+    color: black;
 }
 
 nav a.activo {
@@ -83,8 +83,7 @@ h1{
 }
 
 button{
-    color: #75625E;
-    background-color: #AFCDD8;
+    background-color: #75625E;
     border-radius: 10px;
     border-style: none;
     position: relative; 
@@ -94,19 +93,15 @@ button{
 section {
     background-color: #E0A295;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    margin-bottom: 40px;
     text-align: center;
 }
 
 .presentacion {
-    background-color: #AFCDD8;
-    color: #75625E;
+    background-color: #53634F;
+    color: #F0DEDC;
     font-family: "Abel", sans-serif;
-    text-align: center;
-    width: 450px;
-    height: 650px;
+    width: 500px;
+    height: 350px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
@@ -125,7 +120,7 @@ section {
 
 .presentacion h3 {
     font-family: "Poetsen One", sans-serif;
-    color: #75625E;
+    color: #F0DEDC;
     font-size: 18px;
 }
 
@@ -141,7 +136,6 @@ section {
 .info-sucursal {
     text-align: center;
     text-size-adjust: 100%;
-    font-size:larger;
     color: #75625E;
     font-family: "Abel", sans-serif;
     font-weight: 400;
@@ -149,7 +143,7 @@ section {
 }
 
 .sucursal {
-    background-color: #F0DEDC;
+    background-color: #75625E;
     flex: 1;
     border-radius: 15px;
    
@@ -157,6 +151,7 @@ section {
 
 .sucursal h3 {
     font-family: "Poetsen One", sans-serif;
+    color: #F0DEDC;
     font-size: 22px;
     margin-top: 0;
 }
@@ -216,7 +211,7 @@ section {
 }
 
 .redes a:hover {
-    color: #AFCDD8;
+    color: black;
 }
 
 .copyright {

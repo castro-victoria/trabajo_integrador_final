@@ -8,7 +8,7 @@ imagenes[5] = "imagenes/carrusel/6.png"
 imagenes[6] = "imagenes/carrusel/7.png"
 imagenes[7] = "imagenes/carrusel/8.png"
 let x = 0;
-
+//Funcion avanzar
 function siguiente(){
     x++;
     let photo = document.getElementById("fotos");
@@ -21,8 +21,8 @@ function siguiente(){
         photo.setAttribute("src", imagenes[x]);
     }
 }
-
-function prev(){
+//Funcion retroceder
+function anterior(){
     x--;
     let photo = document.getElementById("fotos");
     if (x >= 0){
@@ -32,4 +32,7 @@ function prev(){
         photo.setAttribute("src", imagenes[x]);
     }
 }
-window.setInterval(siguiente,4000);
+//Botones
+document.getElementById("btnAnterior").addEventListener("click", anterior);
+document.getElementById("btnSiguiente").addEventListener("click", siguiente);
+window.setInterval(siguiente,6000);

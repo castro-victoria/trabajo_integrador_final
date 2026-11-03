@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Che Bakery | Inicio</title>
         <link rel="stylesheet" href="style.principal.css">
-        <script type="text/javascript" src="principal.js"></script>
+        <script type="text/javascript" src="principal.js" defer></script>
     </head>
     <body>
         <header>
@@ -27,21 +27,18 @@
             </nav>
         </header>
         <main>
-            <br>
             <div id="carrusel">
             <img id="fotos" src="imagenes/carrusel/1.png" alt="Cookie de Che Bakery">
-        </div>
-        <br>
-        <form name="cambiar">
-            <button type="button" value="Anterior" onclick="prev();">
-                <img src="fonts_icons/flecha_izquierda.png" alt="atras">
-            </button>
-
-            <button type="button" value="Siguiente" onclick="siguiente();">
-                <img src="fonts_icons/flecha_derecha.png" alt="siguiente">
-            </button>
-        </form>
-        <main>
+            </div>
+            <br>
+            <form name="cambiar">
+                <button type="button" id="btnAnterior">
+                    <img src="fonts_icons/flecha_izquierda.png" alt="atras">
+                </button>
+                <button type="button" id="btnSiguiente">
+                    <img src="fonts_icons/flecha_derecha.png" alt="siguiente">
+                </button>
+            </form>
             <br>
             <section class="presentacion">
                 <h2>Un poquito sobre Che Bakery</h2>
@@ -51,6 +48,7 @@
                     Nuestra propuesta busca crear una experiencia que va más allá de lo gastronómico, conectando con quienes 
                     disfrutan de los pequeños placeres, los sabores irresistibles y un estilo propio.
                 </p>
+                <p>Conocé nuestros sabores y ordená las que desees.</p>
                 <h3>¡Hechas con amor, para disfrutar!</h3>
             </section> 
             <br>
@@ -62,7 +60,7 @@
                     </div>
                     <div class="info-sucursal">
                         <p></p>¡Tenemos dos sucursales!
-                        <p>Elegí la que más cerca te quede cerca y vení a disfrutar.</p>
+                        <p>Elegí la que más cerca te quede y vení a disfrutar.</p>
                     </div>
                     <div class="sucursal">
                         <h3>Sucursal Villa Mercedes</h3>

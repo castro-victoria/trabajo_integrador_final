@@ -74,11 +74,13 @@ h1{
 form {
     width: 85%;
     max-width: 850px;
-    margin: 50px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 30px;
     background-color: #F0DEDC;
     border-radius: 18px;
     box-shadow: 4px black;
+    text-align: center;
 }
 
 fieldset {
@@ -152,7 +154,7 @@ button:hover {
     transform: scale(1.04);
 }
 
-#btnAgregarSabor {
+.btnAgregarSabor {
     margin-top: 10px;
 }
 
@@ -177,13 +179,12 @@ button:hover {
     display: none !important;
 }
 
-#btnEnviar {
+.btnEnviar {
     display: block;
     margin: 30px;
     padding: 15px ;
     font-size: 18px;
 }
-
 
 #respuesta {
     width: 85%;
